@@ -1,0 +1,15 @@
+demo-config-server:
+  build: /spring-cloud-demo/demo-config-server
+  ports:
+    - "8091:8091"
+demo-eureka:
+  build: /spring-cloud-demo/demo-eureka-server
+  ports:
+    - "8761:8761"
+demo-app:
+  build: /spring-cloud-demo/demo
+  links:
+    - demo-eureka:eureka
+    - demo-config-server:config
+  ports:
+    - "8090:8090"

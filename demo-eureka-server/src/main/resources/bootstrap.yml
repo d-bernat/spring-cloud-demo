@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo-eureka-server
+  cloud:
+    config:
+      enabled: false
