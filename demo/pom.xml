@@ -74,18 +74,20 @@
                         </goals>
                         <configuration>
                             <target>
-                                <!-- calls deploy script -->
+                                <!-- calls deploy script 
                                 <sshexec host="dev11.dbernat.traveltainment.int" trust="yes"
                                          username="vagrant" keyfile="/projects/spring-cloud-demo/.vagrant/machines/default/virtualbox/private_key"
                                          command="sh /spring-cloud-demo/deploy.sh ${microservice}" />
+                                -->         
 
-                                <!-- SSH -->
+                                <!-- SSH 
                                 <taskdef name="sshexec"
                                          classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec"
                                          classpathref="maven.plugin.classpath" />
                                 <taskdef name="ftp"
                                          classname="org.apache.tools.ant.taskdefs.optional.net.FTP"
                                          classpathref="maven.plugin.classpath" />
+                                -->         
                             </target>
                         </configuration>
                     </execution>
