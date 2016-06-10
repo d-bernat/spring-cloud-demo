@@ -26,7 +26,11 @@ public class DemoApplication {
     @RequestMapping("/")
     public String home() {
         LOG.info("home functionality is running");
+        return "this is test " + name;
+    }
+    
+    @RequestMapping("/test")
+    public String test() {
         return "this is another test " + name;
     }
-
 }
